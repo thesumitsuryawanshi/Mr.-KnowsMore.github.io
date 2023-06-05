@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+h4{
+  color: black;
+}
+
+.bookcover{ 
+    height:340px;
+    width:290px;
+    border-radius: 10px;
+    box-shadow: #827c7c 17px 17px 25px 20px ;
+    margin-top: 30px; 
+  }
+
+p{
+color: gray;
+font-size: 16px;
+margin-top: 20px;
+}
+
+.buttonContainer {
+display: flex;
+flex-direction: row;
+}
+
+button {
+  font-size: 16px;
+  padding: 14px;
+  margin: 7px;
+    border-radius: 8px;
+color: white;
+background-color: black;
+} 
+
+.buttonTwo {
+  font-size: 16px;
+  padding: 14px;
+  margin: 7px;
+  border-radius: 15px 0px ;
+color: black;
+background-color: rgb(230, 225, 225);
+}
+
+.textbox{
+  font-style: Bold;
+  font-family:system-ui ;
+  font-size: 16px;
+  height: 70px;
+  width: 550px;
+border-radius: 8px ;
+text-align: center;
+margin: 5px;
+}
+
+
+.answerField{
+  font-family:system-ui ;
+  font-size: 18px; 
+  color: black;
+  margin:10px 
+
+}
+
+
+.answerFieldContainer{
+display: flex;
+flex-direction: row;
+display: none;
+align-items: center;
+}
+
+.stylingAnsfield{
+  margin: 9px;
+    font-size: 15px;
+}
+
+.headerContainer{
+ display: flex;
+ flex-direction: column;
+ align-items: center; 
+}
