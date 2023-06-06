@@ -54,8 +54,8 @@
         <body >        
 
              <div className='buttonContainer'>
-                 <button onClick={AskQuestion} className='button'>  Ask Question to ChatGPT3 </button>
-                 <button  onClick={ImFeelingLucky} type="button" className='buttonTwo'> I'm feeling Lucky </button>
+                 <button onClick={AskQuestionToAI} className='button'>  Ask Question to ChatGPT3 </button>
+                 <button  onClick={AskQuestionToGoogle} type="button" className='buttonTwo'> I'm feeling Lucky </button>
              </div>
         
         </body>
@@ -70,7 +70,7 @@
   }
 
 
-  function AskQuestion() {
+  function AskQuestionToGoogle() {
    var question = document.getElementById("ip_field").value;
    document.getElementById("ip_field").value = '' ;
     document.getElementById("ip_field").placeholder = "Any other question ?";
@@ -78,7 +78,7 @@
 
   }
   
-  function ImFeelingLucky() {
+  function AskQuestionToAI() {
     var question = document.getElementById("ip_field").value;
     document.getElementById("ip_field").value = '';
 
@@ -92,15 +92,6 @@
 //-------------------------//-------------------------expansion of abv buttons -------------------------//-------------------------//----
   
 const  getAnswerfromPDF = async(question) => {
-  //need to implement cache hit and cache miss logic  
-
-
-  //ref : https://github.com/redis-developer/redis-caching-api-responses/blob/master/api.js
-  //ref :  https://www.youtube.com/watch?v=ztLsihiCHic&t=593s
-  //ref : https://www.youtube.com/watch?v=oyjzi837wME&t=1270s
-
-  // ChatGpt for embeddings section of project : https://platform.openai.com/docs/guides/embeddings/what-are-embeddings
-  // ChatGpt for embeddings section of project : https://platform.openai.com/docs/api-reference/introduction
 
 
 let receivedQuestion = question
@@ -115,16 +106,6 @@ console.log(answer);
 
 }
 
-  //   JSON.stringify(question) === JSON.stringify(redisdbquestion); ////comparing the json data to redisDB  by Lodash 
-  // const response = (await axios.get(API_URL+endpoint)).data
-  // document.getElementById("answerFieldContainerID").style.display = 'flex';
-
-  // let _answer = document.getElementById('ans_field').innerHTML = response.answer;
-  // console.log(response)
-
-  // console.log(question);
-   
-  // quit()
 }
 
 function getAnswerfromAI(questionForAI) {
