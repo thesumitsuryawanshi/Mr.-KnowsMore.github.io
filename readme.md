@@ -14,7 +14,6 @@ Simply ask a question and he will do his best to provide a helpful answer.
 # Instructions:
 Please dont forget to insert OpenAI APi key in your env file.
 
-**Example:**
 
 # Question :
 ![Screenshot 2023-06-07 094203](https://github.com/thesumitsuryawanshi/Mr.-KnowsMore/assets/58788722/d58f32c3-35cb-4f61-b2e1-966b44da2342)
