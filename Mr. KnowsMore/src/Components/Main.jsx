@@ -29,18 +29,22 @@
         <div className='App-header'>
         <header className='headerContainer'>
         
-          <a  href='https://www.amazon.com/Minimalist-Entrepreneur-Great-Founders-More/dp/0593192397' target='_blank' >
+          <a  href='https://github.com/thesumitsuryawanshi?tab=repositories' target='_blank' >
                 <img src={Knowsmore} className="bookcover"  alt="book-logo" />
                 </a>       
         
                 <h4> Mr. KnowsMore <br /> Knows <br /> Everything </h4>
                 <p>
                        This is an experiment in using AI. <br/> 
-                       Ask a question and AI'll answer it in real-time. 
+                       Ask a question and AI'll answer it in real-time. <br />
+                       There is Google Button as well for Searching Query in new Tab. 
                 </p>  
                           <input className='textbox'  placeholder="Who is Elon Musk ?"  id='ip_field'  />  
                           <div className='answer-container'>
-                          { <div id='answerFieldContainerID' className='answerFieldContainer'> <p className='answerField' > Answer : </p> <p id='ans_field'>  </p> </div> }
+                           <div id='answerFieldContainerID' className='answerFieldContainer'>
+                             <p className='answerField' > Answer: </p>
+                           <br/>
+                            <p id='ans_field'>  </p> </div> 
                           </div>
 
            </header> 

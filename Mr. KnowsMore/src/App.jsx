@@ -1,8 +1,6 @@
 import React from 'react'
 import './App.css';
-import Questions  from './Components/Questions.jsx';
-import Embeddings from './Components/Embeddings';
-import { div } from '@tensorflow/tfjs';
+import Main  from './Components/Main.jsx';
 
 
 
@@ -11,7 +9,7 @@ function App() {
       return (
        
 <div>
-          <Questions/>     
+          <Main/>     
             </div>
   );
       
