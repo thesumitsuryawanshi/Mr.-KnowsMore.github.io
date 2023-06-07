@@ -2,12 +2,18 @@
 
 Mr. KnowsMore is an intelligent ChatBot powered by OpenAI's ChatGpt3 engine, specifically the 'text-davinci-003' model. It is designed to provide informative answers to user questions.
 
+## Tech Stack :
+- ReactJs
+- Node.js
+- HTML & CSS
+- Git
+
 ## Engine Details
 
 - Engine: text-davinci-003
 - Prompt : QuestionForAI 
-## Usage
 
+## Usage
 To interact with Mr. KnowsMore,
 Simply ask a question and he will do his best to provide a helpful answer.
 
