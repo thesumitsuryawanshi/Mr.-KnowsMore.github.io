@@ -23,9 +23,9 @@
   function Questions()
   {
       return (
-       <div>
+       <div className='body-container'>
             <div>
-        <div className='App'>
+        <div className='App '>
         <div className='App-header'>
         <header className='headerContainer'>
         
@@ -38,20 +38,13 @@
                        This is an experiment in using AI. <br/> 
                        Ask a question and AI'll answer it in real-time. 
                 </p>  
-        
-        
-                <input className='textbox'  placeholder="Who is Elon Musk ?"  id='ip_field'  />  
+                          <input className='textbox'  placeholder="Who is Elon Musk ?"  id='ip_field'  />  
+                          <div className='answer-container'>
+                          { <div id='answerFieldContainerID' className='answerFieldContainer'> <p className='answerField' > Answer : </p> <p id='ans_field'>  </p> </div> }
+                          </div>
 
-                          {
-                    
-              <div id='answerFieldContainerID' className='answerFieldContainer'>
-                    <p className='answerField' > Answer : </p>
-                             <p id='ans_field'>  </p>                                                      
-               </div> 
-}
-        </header> 
-          
-        <body >        
+           </header> 
+        <body>        
 
              <div className='buttonContainer'>
                  <button onClick={AskQuestionToAI} className='button'>  Ask Question to ChatGPT3 </button>
@@ -72,9 +65,15 @@
 
   function AskQuestionToGoogle() {
    var question = document.getElementById("ip_field").value;
+   
+   var searchUrl = "https://www.google.com/search?q=" + encodeURIComponent(question);
+   window.open(searchUrl, "searchUrl");  
+
    document.getElementById("ip_field").value = '' ;
     document.getElementById("ip_field").placeholder = "Any other question ?";
     // getAnswerfromPDF(question)
+
+
 
   }
   
